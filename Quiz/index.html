@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <div class="intro py-3 bg-danger text-center">
+    <div class="container">
+      <h2 class="text-light display-3 my-4">Quiz</h2>
+    </div>
+  </div>
+
+  <div data-js="result" class="result py-4 d-none bg-dark text-center">
+    <div class="container lead text-light">
+      <p>Acertou
+        <span class="color display-4 py-3">
+          0%
+        </span>
+        do Quiz!
+      </p>
+      <p data-js="score-message" class="color py-3"></p>
+    </div>
+  </div>
+
+  <div class="quiz py-4 bg-dark">
+    <div class="container">
+      <h2 class="my-5 text-white">Você consegue resolver essas questões sobre os Beatles?</h2>
+      <form data-js="form" class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">Qual a primeira faixa de Sgt. Peppers?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="A">
+              With a little help from my friends
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="B">
+              Sgt. Peppers
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="C">
+              She's living Home
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="D">
+              Within you Without you
+            </label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">Quem tocou o baixo em "While my guitar gently sleeps"?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="A">
+              Paul McCartney
+            </label>
+          </div>
+          <div class="form-check my2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="B">
+              George Harrison
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="C">
+              John Lennon
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="D">
+              Eric Clapton
+            </label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">Quantos albuns os Beatles lançaram?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="A">
+              13
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="B">
+              15
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="C">
+              10
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="D">
+              9
+            </label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">Qual dos ex-beatles teve a carreira mais bem sucedida?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="A">
+              George Harrison
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="B">
+              Paul McCartney
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="C">
+              John Lennon
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="D">
+              Ringo Starr
+            </label>
+          </div>
+        </div>
+        <div data-js="send-answers" class="text-center">
+          <button class="btn bg-danger text-light">Enviar respostas</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
