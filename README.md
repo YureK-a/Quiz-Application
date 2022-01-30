@@ -1,10 +1,10 @@
 # Quiz-Application
 
-#Linguaguens
+#Linguaguens:
 Javascript puro e HTML
 
-#Utilização
+#Utilização:
 Basta escolher uma alternativa em cada pergunta e apertar o botão. Suas respostas serão processadas e sua pontuação será contabilizada.
 
-#Armazamento de dados
+#Armazamento de dados:
 Nenhum. Dados não são salvos após o carregamento da página.
